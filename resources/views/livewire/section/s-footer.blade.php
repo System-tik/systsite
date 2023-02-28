@@ -32,11 +32,10 @@
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contacts</h2>
                 @foreach ($contacts as $contact)
-                    <ul class="text-gray-600 dark:text-gray-400">
+                    <ul class="text-gray-600 dark:text-gray-400">   
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">{{$contact->contenu}}</a>
+                            <a href="" class="hover:underline">{{$contact->contenu}}</a>
                         </li>
-                       
                     </ul>
                 @endforeach
             </div>
