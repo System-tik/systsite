@@ -1,4 +1,4 @@
-<section class="bg-white dark:bg-gray-900 h-screen w-screen flex justify-center items-center">
+<section class="bg-white dark:bg-gray-900 h-screen w-screen flex justify-center items-center svg">
     <div class="grid  px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72">
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Systematik</h1>
