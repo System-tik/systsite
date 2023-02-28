@@ -32,7 +32,7 @@
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contacts</h2>
                 @foreach ($contacts as $contact)
-                    <ul class="text-gray-600 dark:text-gray-400">
+                    <ul class="text-gray-600 dark:text-gray-400">   
                         <li class="mb-4">
                             @if ($contact->type == 'Email')
                             <a href="mailto:{{$contact->contenu}}" class="hover:underline">{{$contact->contenu}}</a>
@@ -45,7 +45,6 @@
                             
                             @endif
                         </li>
-                       
                     </ul>
                 @endforeach
             </div>

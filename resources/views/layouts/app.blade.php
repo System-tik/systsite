@@ -10,8 +10,11 @@
     <title>{{ config('app.name') }}</title>
 
     <style>[x-cloak] { display: none !important; }</style>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <link rel="stylesheet" href="{{asset('build/assets/app-d572f0eb.css')}}">
+    <link rel="stylesheet" href="{{asset('build/assets/filament-c00e5542.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    <script src="{{asset('build/assets/app-548baeb6.js')}}"></script>
     @livewireStyles
     @livewireScripts
     @stack('scripts')
