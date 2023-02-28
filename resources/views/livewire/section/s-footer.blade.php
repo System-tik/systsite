@@ -10,36 +10,35 @@
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Services</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
-                    <li class="mb-4">
-                        <a href="https://flowbite.com/" class="hover:underline">Systematik</a>
-                    </li>
-                    <li>
-                        <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-                    </li>
-                </ul>
+                @foreach ($services as $service)
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="https://flowbite.com/" class="hover:underline">{{$service->titre}}</a>
+                        </li>
+                    </ul>
+                @endforeach
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Réalisations</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
-                    <li class="mb-4">
-                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-                    </li>
-                </ul>
+                @foreach ($realisations as $realisation)    
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="https://github.com/themesberg/flowbite" class="hover:underline ">{{$realisation->titre}}</a>
+                        </li>
+                      
+                    </ul>
+                @endforeach
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contacts</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                    </li>
-                </ul>
+                @foreach ($contacts as $contact)
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">{{$contact->contenu}}</a>
+                        </li>
+                       
+                    </ul>
+                @endforeach
             </div>
         </div>
     </div>
