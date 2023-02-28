@@ -15,6 +15,9 @@
     @livewireStyles
     @livewireScripts
     @stack('scripts')
+
+    {{-- Installation Splide JS --}}
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
 </head>
 
 <body class="antialiased" onload="load()">
@@ -30,11 +33,17 @@
         <livewire:section.s-footer />
     </div>
 @livewire('notifications')
+<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
 <script>
     let loader = document.getElementById("L7");
     function load(){
         loader.style.display = "none";
     }
+    // Splide JS configuration et initialisation
+    var splide = new Splide( '.splide' );
+    splide.mount(); 
+
+    
 </script>
 </body>
 </html>
