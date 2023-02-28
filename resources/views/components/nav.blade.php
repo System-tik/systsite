@@ -1,7 +1,7 @@
 
 <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 lg:px-52 xl:px-72 fixed w-screen" x-data="{
     a : 1
-}">
+}" >
     <div class="container flex  items-center justify-between">
         <a href="https://flowbite.com/" class="flex items-center">
             <img src="{{asset('imgs/logo.jpg')}}" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
