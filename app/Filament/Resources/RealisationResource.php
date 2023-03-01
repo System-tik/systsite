@@ -14,6 +14,7 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Illuminate\Database\Eloquent\Builder;
@@ -33,7 +34,8 @@ class RealisationResource extends Resource
                 Card::make()->schema([
                     TextInput::make("titre")->required(),
                     TextInput::make("url"),
-                    SpatieMediaLibraryFileUpload::make("image")->collection("realisations")->required()
+                    //Forms\Components\FileUpload::make('image')->directory('realisations')
+                    SpatieMediaLibraryFileUpload::make("realisations")->collection("realisations")->required()
                 ]),
             ]);
     }
@@ -45,7 +47,8 @@ class RealisationResource extends Resource
                 //
                 TextColumn::make("titre"),
                 TextColumn::make("url"),
-                SpatieMediaLibraryImageColumn::make("image")->collection("realisations")
+                //ImageColumn::make('image')->
+                SpatieMediaLibraryImageColumn::make("realisations")->collection("realisations")
 
             ])
             ->filters([
