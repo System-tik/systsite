@@ -8,7 +8,7 @@
 
         @foreach ($services as $service)
             @if(($loop->index % 2) == 0)
-                <div class="grid grid-cols-12 px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72 bg-black">
+                <div class="grid grid-cols-12 px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72 bg-gray-100">
                     <div class="flex flex-col justify-center max-w-screen-md col-span-7">
                         <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">{{$service->titre}}</h2>
                         <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400"><?php echo $service['description'] ?></p>
