@@ -13,7 +13,7 @@
                 @foreach ($services as $service)
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#services" class="hover:underline">{{$service->titre}}</a>
+                            <a href="#servi{{$service->id}}" class="hover:underline">{{$service->titre}}</a>
                         </li>
                     </ul>
                 @endforeach
