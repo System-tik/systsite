@@ -1,34 +1,40 @@
 <div>
     {{-- Because she competes with no one, no one can compete with her. --}}
     <section class="bg-white dark:bg-gray-900">
-        <div class="flex flex-col items-center w-full mb-8 text-center lg:mb-16">
-            <h2 class="flex mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Voici l'ensemble  des nos services</h2>
+        <div class="flex flex-col items-center w-full mb-8 text-center lg:mb-16 px-10 lg:px-0">
+            <h2 class="flex mb-4 lg:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white text-xl">Voici l'ensemble  des nos services</h2>
             <p class="text-gray-500 sm:text-xl dark:text-gray-400">Avec Systematic les services sont faites avec soin, ne vous inquieté plus de rien </p>
         </div>
 
         @foreach ($services as $service)
             @if(($loop->index % 2) == 0)
-                <div class="grid grid-cols-12 px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72 bg-gray-100" id="servi{{$service->id}}">
-                    <div class="flex flex-col justify-center max-w-screen-md col-span-7">
-                        <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">{{$service->titre}}</h2>
+                <div class="grid grid-cols-1 px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72 bg-gray-100 " id="servi{{$service->id}}">
+                    <div class="flex flex-col justify-center  col-span-7 max-w-screen-md">
+                        <h2 class="mb-4 lg:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white text-xl">{{$service->titre}}</h2>
+                        <div class="flex md:hidden justify-center items-center text-center  w-full flex-col" >
+                            {{$service->getMedia('services')[0]}}
+                        </div>
                         <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400"><?php echo $service['description'] ?></p>
                     </div>
-                    <div class="col-span-5">
+                    <div class="col-span-5 hidden md:block">
 
                         {{--<img src="{{$service->getMedia('services')}}" alt="" srcset="">--}}
                         {{$service->getMedia('services')[0]}}
                     </div>
                 </div>
             @else
-                <div class="grid grid-cols-12 px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72" id="servi{{$service->id}}">
+                <div class="grid grid-cols-1 px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72" id="servi{{$service->id}}">
 
-                    <div class="col-span-5">
+                    <div class="col-span-5 hidden md:block">
 
                         {{--<img src="{{$service->getMedia('services')}}" alt="" srcset="">--}}
                         {{$service->getMedia('services')[0]}}
                     </div>
                     <div class="flex flex-col justify-center max-w-screen-md col-span-7 items-end">
-                        <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">{{$service->titre}}</h2>
+                        <h2 class="mb-4 lg:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white text-xl">{{$service->titre}}</h2>
+                        <div class="flex md:hidden justify-center items-center text-center  w-full flex-col" >
+                            {{$service->getMedia('services')[0]}}
+                        </div>
                         <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400"><?php echo $service['description'] ?></p>
                     </div>
                 </div>

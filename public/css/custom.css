@@ -5,3 +5,12 @@
     background-size: cover;
     background-position: center;
 }
+
+#service-img{
+    text-align: center;
+}
+
+#service-img img{
+    display: flex;    
+    width: fit-content;
+}
