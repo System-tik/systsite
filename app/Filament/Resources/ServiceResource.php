@@ -45,6 +45,7 @@ class ServiceResource extends Resource
             ->columns([
                 //
                 TextColumn::make("id")->sortable(),
+                TextColumn::make("titre"),
                 TextColumn::make("description"),
                 SpatieMediaLibraryImageColumn::make('services')->collection("services")
             ])
