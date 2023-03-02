@@ -17,6 +17,8 @@ use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 
 class AboutResource extends Resource
 {
@@ -32,6 +34,7 @@ class AboutResource extends Resource
                 Card::make()->schema([
                     TextInput::make("titre")->required(),
                     RichEditor::make("description")->required(),
+                    SpatieMediaLibraryFileUpload::make("abouts")->required()
                 ]),
             ]);
     }
@@ -45,6 +48,7 @@ class AboutResource extends Resource
                 TextColumn::make('titre')->sortable(),
                 TextColumn::make('description'),
                 TextColumn::make('createdAt')->sortable(),
+                SpatieMediaLibraryImageColumn::make("abouts")
             ])
             ->filters([
                 //
