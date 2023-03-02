@@ -1,5 +1,5 @@
 
-                <section class="bg-white dark:bg-gray-900 h-screen w-screen flex justify-center items-center svg" id="home">
+                <section class="bg-white dark:bg-gray-900 h-screen w-screen flex justify-center items-center svg" id="home" style="background-image: url('{{asset('imgs/bg.svg')}}')">
                     <div class="splide">
                         <div class="splide__track">
                             <div class="splide__list">
