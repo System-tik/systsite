@@ -62,7 +62,7 @@
             <div class="animate_right jn/2">
                 <h4 class="ek yj mk gb">Pourquoi nous choisir</h4>
                 <h2 class="fk vj zp pr kk wm qb">{{ $abouts[4]->titre }}</h2>
-                <p class="uo">{{ $abouts[4]->description }}</p>
+                <p class="uo"><?php echo $abouts[4]->description ?></p>
 
                 <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
