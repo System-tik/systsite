@@ -161,10 +161,10 @@
         <div class="tc uf sn tn un gg">
             <div class="animate_left to/2">
                 <h2 class="fk vj zp pr lk ac">
-                    {{$abouts[2]->titre}}
+                    {{$abouts[5]->titre}}
                 </h2>
                 <p class="lk text-white">
-                    <?php echo $abouts[2]->description ?>
+                    <?php echo $abouts[5]->description ?>
                 </p>
             </div>
             <div class="animate_right bf">
