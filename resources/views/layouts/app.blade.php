@@ -8,13 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ config('app.name') }}</title>
+    <link rel="icon" href="{{asset('imgs/logo.jpg')}}">
 
-    <style>[x-cloak] { display: none !important; }</style>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{-- <link rel="stylesheet" href="{{asset('build/assets/app-d572f0eb.css')}}">
     <link rel="stylesheet" href="{{asset('build/assets/filament-c00e5542.css')}}"> --}}
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
-    {{-- <script src="{{asset('build/assets/app-548baeb6.js')}}"></script> --}}
+    <link rel="stylesheet" href="{{asset('style.css')}}">
+
     @livewireStyles
     @livewireScripts
     @stack('scripts')
@@ -23,9 +27,13 @@
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
 </head>
 
-<body class="antialiased" onload="load()">
-    <div class=" w-screen h-screen p-20 text-center flex justify-center items-center" id="L7">
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100" overflow="visible" fill="#1c71d8"><defs>     <rect id="inline" x="15" y="40" width="10" height="20" rx="2" ry="2"></rect></defs> <use xlink:href="#inline" x="0"><animate attributeName="opacity" values="0;1;0" dur="1s" begin="0s" repeatCount="indefinite"></animate> <animateTransform attributeName="transform" type="translate" additive="sum" dur="1s" begin="0s" repeatCount="indefinite" from="0 0" to="10"></animateTransform>   </use><use xlink:href="#inline" x="20"><animate attributeName="opacity" values="0;1;0" dur="1s" begin="0.25s" repeatCount="indefinite"></animate> <animateTransform attributeName="transform" type="translate" additive="sum" dur="1s" begin="0.25s" repeatCount="indefinite" from="0 0" to="10"></animateTransform>   </use><use xlink:href="#inline" x="40"><animate attributeName="opacity" values="0;1;0" dur="1s" begin="0.5s" repeatCount="indefinite"></animate> <animateTransform attributeName="transform" type="translate" additive="sum" dur="1s" begin="0.5s" repeatCount="indefinite" from="0 0" to="10"></animateTransform>   </use><use xlink:href="#inline" x="60"><animate attributeName="opacity" values="0;1;0" dur="1s" begin="0.75s" repeatCount="indefinite"></animate> <animateTransform attributeName="transform" type="translate" additive="sum" dur="1s" begin="0.75s" repeatCount="indefinite" from="0 0" to="10"></animateTransform>   </use> </svg>
+<body class="antialiased" onload="load()"  x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+      x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+      :class="{'b eh': darkMode === true}">
+    <div class=" w-screen h-screen p-20 text-center flex justify-center items-center absolute bg-white top-0" id="L7" style="z-index: 2000">
+        <img src="{{ asset('imgs/SYSTEMATIK2.gif') }}" alt="" srcset="" class="w-96">
     </div>
     <div id="app">
         <x-nav></x-nav>
@@ -35,19 +43,74 @@
         <livewire:section.s-real />
         <livewire:section.s-footer />
     </div>
-@livewire('notifications')
-<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-<script>
-    let loader = document.getElementById("L7");
-    function load(){
-        loader.style.display = "none";
-    }
-    // Splide JS configuration et initialisation
-    var splide = new Splide( '.splide' );
-    splide.mount(); 
+    @livewire('notifications')
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script>
+        let loader = document.getElementById("L7");
+        function load(){
+            loader.style.display = "none";
+        }
+        // Splide JS configuration et initialisation
+        var splide = new Splide( '#spHeader', {
 
-    
-</script>
+        });
+        splide.mount();
+
+
+
+
+    </script>
+    <button
+        class="xc wf xf ie ld vg sr gh tr g sa ta _a"
+        @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+        @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+        :class="{ 'uc' : scrollTop }"
+    >
+        <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+        </svg>
+    </button>
+
+    <!-- ====== Back To Top End ===== -->
+
+    <script>
+        //  Pricing Table
+        const setup = () => {
+            return {
+                isNavOpen: false,
+
+                billPlan: 'monthly',
+
+                plans: [
+                    {
+                        name: 'Starter',
+                        price: {
+                            monthly: 29,
+                            annually: 29 * 12 - 199,
+                        },
+                        features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+                    },
+                    {
+                        name: 'Growth Plan',
+                        price: {
+                            monthly: 59,
+                            annually: 59 * 12 - 100,
+                        },
+                        features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+                    },
+                    {
+                        name: 'Business',
+                        price: {
+                            monthly: 139,
+                            annually: 139 * 12 - 100,
+                        },
+                        features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+                    },
+                ],
+            };
+        };
+    </script>
+    <script defer src="{{asset('bundle.js')}}"></script>
 </body>
 </html>
 

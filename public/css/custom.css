@@ -12,6 +12,11 @@
 }
 
 #service-img img{
-    display: flex;    
+    display: flex;
     width: fit-content;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-y: scroll
 }

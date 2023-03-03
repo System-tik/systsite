@@ -34,7 +34,7 @@ class ServiceResource extends Resource
                 Card::make()->schema([
                     TextInput::make("titre")->required(),
                     RichEditor::make('description')->required(),
-                    SpatieMediaLibraryFileUpload::make("services")->collection("services")->required(),
+                    SpatieMediaLibraryFileUpload::make("services")->required(),
                 ]),
             ]);
     }
@@ -47,7 +47,7 @@ class ServiceResource extends Resource
                 TextColumn::make("id")->sortable(),
                 TextColumn::make("titre"),
                 TextColumn::make("description"),
-                SpatieMediaLibraryImageColumn::make('services')->collection("services")
+                SpatieMediaLibraryImageColumn::make('services')
             ])
             ->filters([
                 //

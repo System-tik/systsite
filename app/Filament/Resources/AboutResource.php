@@ -33,8 +33,8 @@ class AboutResource extends Resource
                 //
                 Card::make()->schema([
                     TextInput::make("titre")->required(),
-                    RichEditor::make("description")->required(),
-                    SpatieMediaLibraryFileUpload::make("abouts")->required()
+                    TextInput::make("description")->required(),
+                    SpatieMediaLibraryFileUpload::make("abouts")
                 ]),
             ]);
     }
@@ -55,6 +55,7 @@ class AboutResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\ReplicateAction::make()
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
