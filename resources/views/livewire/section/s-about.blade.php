@@ -1,5 +1,5 @@
 <!-- ===== Small Features Start ===== -->
-<section id="features" class="pt-40">
+<section id="features" class="pt-24">
     <div class="bb ze ki yn 2xl:ud-px-12.5">
         <div class="tc uf zo xf ap zf bp mq">
             <!-- Small Features Item -->
