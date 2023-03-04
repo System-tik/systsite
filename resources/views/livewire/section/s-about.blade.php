@@ -1,7 +1,7 @@
 <!-- ===== Small Features Start ===== -->
 <section id="features" class="pt-24">
     <div class="bb ze ki yn 2xl:ud-px-12.5">
-        <div class="tc uf zo xf ap zf bp mq">
+        <div class="flex gap-5 md:flex-row md:gap-2 flex-col justify-between items-stretch">
             <!-- Small Features Item -->
             <div class="animate_top kn to/3 tc cg oq">
                 <div class="tc wf xf cf ae cd rg mh">
@@ -48,12 +48,12 @@
             <div class="animate_left xc gn gg jn/2 i">
                 <div>
                     <img src="images/shape-05.svg" alt="Shape" class="h -ud-left-5 x" />
-                    <img src="images/about-01.png" alt="About" class="ib" />
-                    <img src="images/about-02.png" alt="About" />
+                    <img src="imgs/1.png" alt="About" class="ib" />
+                    <img src="imgs/2.png" alt="About" />
                 </div>
                 <div>
                     <img src="images/shape-06.svg" alt="Shape" />
-                    <img src="images/about-03.png" alt="About" class="ob gb" />
+                    <img src="imgs/3.png" alt="About" class="ob gb" />
                     <img src="images/shape-07.svg" alt="Shape" class="bb" />
                 </div>
             </div>
