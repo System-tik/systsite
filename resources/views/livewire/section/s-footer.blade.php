@@ -168,7 +168,7 @@
                 </p>
             </div>
             <div class="animate_right bf">
-                <a href="#" class="vc ek kk hh rg ol il cm gi hi">
+                <a href="#footer" class="vc ek kk hh rg ol il cm gi hi">
                     Commencez maintenant
                 </a>
             </div>
@@ -187,7 +187,7 @@
                         <img src="imgs/logo.jpg" alt="Logo" class="xc nm w-12" />
                     </a>
 
-                    <p class="lc fb">Systematik nde makambu</p>
+                    <p class="lc fb">Le partenaire numérique des entrepreneurs.</p>
 
                     <ul class="tc wf cg">
                         @foreach($sociaux as $so)

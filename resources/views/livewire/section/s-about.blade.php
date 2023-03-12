@@ -1,15 +1,15 @@
 <!-- ===== Small Features Start ===== -->
 <section id="features" class="pt-24">
     <div class="bb ze ki yn 2xl:ud-px-12.5">
-        <div class="flex gap-5 md:flex-row md:gap-2 flex-col justify-between items-stretch">
+        <div class="flex gap-5 md:flex-row md:gap-2 flex-col justify-between items-stretch md:hidden lg:flex">
             <!-- Small Features Item -->
             <div class="animate_top kn to/3 tc cg oq">
-                <div class="tc wf xf cf ae cd rg mh">
+                <div class="tc wf xf cf ae cd rg mh ">
                     <img src="images/icon-01.svg" alt="Icon" />
                 </div>
                 <div>
-                    <h4 class="ek yj go kk wm xb">{{ $abouts[1]->titre }}</h4>
-                    <p>{{ $abouts[1]->description }}</p>
+                    <h4 class="ek yj go kk wm xb ">{{ $abouts[1]->titre }}</h4>
+                    <p class="text-justify">{{ $abouts[1]->description }}</p>
                 </div>
             </div>
 
@@ -20,7 +20,7 @@
                 </div>
                 <div>
                     <h4 class="ek yj go kk wm xb">{{ $abouts[2]->titre }}</h4>
-                    <p>{{ $abouts[2]->description }}</p>
+                    <p class="text-justify">{{ $abouts[2]->description }}</p>
                 </div>
             </div>
 
@@ -31,10 +31,45 @@
                 </div>
                 <div>
                     <h4 class="ek yj go kk wm xb">{{ $abouts[3]->titre }}</h4>
-                    <p>{{ $abouts[3]->description }}</p>
+                    <p class="text-justify">{{ $abouts[3]->description }}</p>
                 </div>
             </div>
         </div>
+        <div class="gap-5 md:grid-cols-3 md:gap-2  items-stretch hidden md:grid lg:hidden ">
+            <!-- Small Features Item -->
+            <div class="animate_top text-center  flex flex-col justify-center items-center ">
+                <div class="tc wf xf cf ae cd rg mh ">
+                    <img src="images/icon-01.svg" alt="Icon" />
+                </div>
+                <div class="text-center">
+                    <h4 class="ek yj go kk wm xb">{{ $abouts[1]->titre }}</h4>
+                    <p class="">{{ $abouts[1]->description }}</p>
+                </div>
+            </div>
+
+            <!-- Small Features Item -->
+            <div class="animate_top text-center  flex flex-col justify-center items-center">
+                <div class="tc wf xf cf ae cd rg nh">
+                    <img src="images/icon-02.svg" alt="Icon" />
+                </div>
+                <div>
+                    <h4 class="ek yj go kk wm xb">{{ $abouts[2]->titre }}</h4>
+                    <p class="text-justify">{{ $abouts[2]->description }}</p>
+                </div>
+            </div>
+
+            <!-- Small Features Item -->
+            <div class="animate_top text-center  flex flex-col justify-center items-center">
+                <div class="tc wf xf cf ae cd rg oh">
+                    <img src="images/icon-03.svg" alt="Icon" />
+                </div>
+                <div>
+                    <h4 class="ek yj go kk wm xb">{{ $abouts[3]->titre }}</h4>
+                    <p class="text-justify">{{ $abouts[3]->description }}</p>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </section>
 <!-- ===== Small Features End ===== -->
@@ -62,7 +97,7 @@
             <div class="animate_right jn/2">
                 <h4 class="ek yj mk gb">Pourquoi nous choisir</h4>
                 <h2 class="fk vj zp pr kk wm qb">{{ $abouts[4]->titre }}</h2>
-                <p class="uo"><?php echo $abouts[4]->description ?></p>
+                <p class="uo text-justify"><?php echo $abouts[4]->description ?></p>
 
                 <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">

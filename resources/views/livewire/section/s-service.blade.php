@@ -57,7 +57,7 @@
 
     <!-- Section Title Start -->
     <div
-        x-data="{ sectionTitle: `Nos services`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
+        x-data="{ sectionTitle: `Nos services`, sectionTitleText: `Nous mettons à votre disposition tous les services numériques indispensables de l’ère pour booster votre croissance.`}"
     >
         <div class="animate_top bb ze rj ki xn vq">
             <h2
@@ -72,11 +72,12 @@
             <div class="wc qf pn xo ng">
                 <!-- Service Item -->
                 @foreach ($services as $service)
-                <div class="animate_top sg oi pi zq ml il am cn _m">
+                <div class="animate_top sg oi pi zq ml il am cn _m text-justify">
                     <img src="{{$service->getMedia()[0]['original_url']}}" alt="Icon" />
                     <h4 class="ek zj kk wm nb _b">{{ $service->titre }}</h4>
                     <p>
                         <?php echo $service->description ?>
+                        opopop
                     </p>
                 </div>
                 @endforeach
