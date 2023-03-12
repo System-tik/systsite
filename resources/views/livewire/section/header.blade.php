@@ -36,14 +36,14 @@
     <!-- Hero Content -->
     <div class="bb ze ki xn 2xl:ud-px-0">
         <div class="tc _o">
-            <div class="animate_left jn/2">
+            <div class="animate_left jn/2 text-justify">
                 <h1 class="fk vj zp or kk wm wb">{{$abouts[0]->titre}}</h1>
                 <p class="fq">
                     <?php echo $abouts[0]->description ?>
                 </p>
                 <div class="tc tf yo zf mb">
                     <span class="tc sf">
-                        <a href="#" class="inline-block ek xj kk wm"> Appelez le (00243) 82-82-82-283 </a>
+                        <a href="tel:+243810930187" class="inline-block ek xj kk wm"> Appelez le (00243) 81-09-30-187 </a>
                         <span class="inline-block">Pour toute question</span>
                     </span>
                 </div>

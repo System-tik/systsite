@@ -94,7 +94,7 @@
             </div>
 
             <!-- About Content -->
-            <div class="animate_right jn/2">
+            <div class="animate_right jn/2 text-justify">
                 <h4 class="ek yj mk gb">Pourquoi nous choisir</h4>
                 <h2 class="fk vj zp pr kk wm qb">{{ $abouts[4]->titre }}</h2>
                 <p class="uo text-justify"><?php echo $abouts[4]->description ?></p>

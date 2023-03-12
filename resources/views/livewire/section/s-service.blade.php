@@ -77,7 +77,6 @@
                     <h4 class="ek zj kk wm nb _b">{{ $service->titre }}</h4>
                     <p>
                         <?php echo $service->description ?>
-                        opopop
                     </p>
                 </div>
                 @endforeach
