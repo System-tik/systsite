@@ -112,8 +112,8 @@
             <div class="tc uf ap gg fp">
                 <div class="animate_top zd/2 to/4">
                     <a href="index.html">
-                        <img src="imgs/logo.jpg" alt="Logo" class="om w-12" />
-                        <img src="imgs/logo.jpg" alt="Logo" class="xc nm w-12" />
+                        <img src="imgs/logo.png" alt="Logo" class="om w-12" />
+                        <img src="imgs/logo.png" alt="Logo" class="xc nm w-12" />
                     </a>
 
                     <p class="lc fb">Le partenaire numérique des entrepreneurs.</p>

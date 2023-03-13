@@ -47,8 +47,8 @@
     <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
         <div class="vd to/4 tc wf yf">
             <a href="/">
-                <img src="{{asset('imgs/logo.jpg')}}" class="om h-6 sm:h-10" alt="logo ligth" />
-                <img src="{{asset('imgs/logo.jpg')}}" class="xc nm h-6 sm:h-10" alt="logo dark" />
+                <img src="{{asset('imgs/logo.png')}}" class="om h-6 sm:h-10" alt="logo ligth" />
+                <img src="{{asset('imgs/logo.png')}}" class="xc nm h-6 sm:h-10" alt="logo dark" />
 
             </a>
 
