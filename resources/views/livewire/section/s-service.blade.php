@@ -47,7 +47,7 @@
 
 
 <!-- ===== Team Start ===== -->
-<section class="i pg ji gp uq" style="background-color: #f4f7fa" id="services">
+<section class="i pg ji gp uq  fh rm" id="services">
     <!-- Bg Shapes -->
 
     <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
