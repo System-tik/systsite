@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ config('app.name') }}</title>
-    <link rel="icon" href="{{asset('imgs/logo.png')}}">
+    <link rel="icon" href="{{asset('imgs/icon.png')}}">
 
     <style>
         [x-cloak] { display: none !important; }
