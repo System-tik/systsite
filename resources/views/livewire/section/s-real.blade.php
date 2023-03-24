@@ -4,7 +4,7 @@
         <div class="px-4 py-8 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:px-52 xl:px-72">
             <div class="flex flex-col items-center w-full mb-8 text-center lg:mb-16">
                 <h2 class=" mb-4  tracking-tight fk vj zp pr kk wm qb">Ils nous ont fait confiance</h2>
-                <p class="text-gray-500 sm:text-xl dark:text-gray-400">Les realisations faites par Systematik</p>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">Les réalisations faites par Systematik</p>
             </div>
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 ">
                 @foreach($realisations as $realisation)

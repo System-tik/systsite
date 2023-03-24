@@ -1,5 +1,5 @@
 <!-- ===== Small Features Start ===== -->
-<section id="features" class="pt-24">
+<section id="features" class="md:pt-24">
     <div class="bb ze ki yn 2xl:ud-px-12.5">
         <div class="flex gap-5 md:flex-row md:gap-2 flex-col justify-between items-stretch md:hidden lg:flex">
             <!-- Small Features Item -->
