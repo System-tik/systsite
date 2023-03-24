@@ -99,7 +99,7 @@
                 <h2 class="fk vj zp pr kk wm qb">{{ $abouts[4]->titre }}</h2>
                 <p class="uo text-justify"><?php echo $abouts[4]->description ?></p>
 
-                <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fslightbox class="vc wf hg mb">
+                <a href="https://www.youtube.com/watch?v=wJr3KQiO40g" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
                   <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                   <img src="images/icon-play.svg" alt="Play" />
