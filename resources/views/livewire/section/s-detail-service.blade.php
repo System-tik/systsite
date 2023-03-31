@@ -25,7 +25,7 @@
                     <h3 class="text-2xl font-bold tracking-tight text-gray-900">{{$sous->nom}}</h3>
                     <p class="mt-6 text-base leading-7 text-gray-600"><?php echo $sous['description'] ?></p>
                     <div class="mt-10 flex items-center gap-x-4">
-                        <h4 class="flex-none text-lg font-semibold leading-6 text-indigo-600">Chosir le type de tarif qui vous convient</h4>
+                        <h4 class="flex-none text-sm md:text-lg font-semibold leading-6 text-indigo-600">Chosir le type de tarif qui vous convient</h4>
                         <div class="h-px flex-auto bg-gray-100"></div>
                     </div>
                     <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-3 sm:gap-6">
@@ -50,7 +50,7 @@
                                     <span class="text-5xl font-bold tracking-tight text-gray-900">${{$tarif->prix}}</span>
                                     <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
                                 </p>
-                                <a href="https://wa.me/+243810930187?text=www.systematik.tech,%20*commanader:*%20{{$sous->nom}}%20,%20Formule%20{{$tarif->titre}}." class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Commander</a>
+                                <a href="https://wa.me/+243810930187?text=www.systematik.tech,%20*commanade:*%20{{$sous->nom}},%20Formule%20{{$tarif->titre}}." class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Commander</a>
                                 <p class="mt-6 text-xs leading-5 text-gray-600"><?php echo  $tarif['description']?></p>
                             </div>
                         </div>
