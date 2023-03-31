@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('layouts.home');
 });
+Route::get('/service/{id}', function ($id) {
+    return view('layouts.service', ['ids'=>$id]);
+})->name('service');

@@ -23,7 +23,7 @@
 
 
 
-<section class="gj do ir hj sp jr i pg " id="header">
+    <section class="gj do ir hj sp jr i pg " id="header">
     <!-- Hero Images -->
     <div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
         <img src="images/shape-01.svg" alt="shape" class="xc 2xl:ud-block h t -ud-left-[10%] ua" />

@@ -23,6 +23,10 @@
     @livewireScripts
     @stack('scripts')
 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
     {{-- Installation Splide JS --}}
     <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
 </head>
@@ -31,17 +35,15 @@
       x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
-      :class="{'b eh': darkMode === true}">
+      :class="{'b eh': darkMode === true}" >
     <div class=" w-screen h-screen p-20 text-center flex justify-center items-center absolute bg-white top-0" id="L7" style="z-index: 2000">
         <img src="{{ asset('imgs/SYSTEMATIK2.gif') }}" alt="" srcset="" class="w-96">
     </div>
-    <div id="app">
+    <div id="app" style="overflow-y: auto; scroll-behavior: smooth;">
         <x-nav></x-nav>
-        <livewire:section.header />
-        <livewire:section.s-about />
-        <livewire:section.s-service />
-        <livewire:section.s-real />
-        <livewire:section.s-footer />
+        @yield('app')
+
+
     </div>
     @livewire('notifications')
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>

@@ -7,14 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Service extends Model implements HasMedia
+class Tarif extends Model implements HasMedia
 {
     use HasFactory;
     use InteractsWithMedia;
-    protected $fillable = ["titre", "description"];
+    protected $fillable = ['titre', 'description', 'prix', 'souse_id'];
 
-    public function sous(){
-        return $this->hasMany(Sous::class);
+    public function souse(){
+        return $this->belongsTo(Sous::class);
     }
-
 }

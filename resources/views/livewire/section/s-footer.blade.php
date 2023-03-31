@@ -1,11 +1,11 @@
 
 <section id="footer" class="i pg fh rm ji gp uq">
     <!-- Bg Shapes -->
-    <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
-    <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
-    <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
-    <img src="images/shape-12.svg" alt="Shape" class="h p s" />
-    <img src="images/shape-13.svg" alt="Shape" class="h r q" />
+    <img src="{{asset('images/shape-06.svg')}}" alt="Shape" class="h aa y" />
+    <img src="{{asset('images/shape-03.svg')}}" alt="Shape" class="h ca u" />
+    <img src="{{asset('images/shape-07.svg')}}" alt="Shape" class="h w da ee" />
+    <img src="{{asset('images/shape-12.svg')}}" alt="Shape" class="h p s" />
+    <img src="{{asset('images/shape-13.svg')}}" alt="Shape" class="h r q" />
 
     <!-- Section Title Start -->
     <div
@@ -28,8 +28,8 @@
         <div class="tc uf sn tf rn un zf xl:gap-10">
             <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
                 <!-- Bg Shapes -->
-                <img src="images/shape-03.svg" alt="Shape" class="h la x wd" />
-                <img src="images/shape-06.svg" alt="Shape" class="h la ma ne kf" />
+                <img src="{{asset('images/shape-03.svg')}}" alt="Shape" class="h la x wd" />
+                <img src="{{asset('images/shape-06.svg')}}" alt="Shape" class="h la ma ne kf" />
 
                 @foreach ($contacts as $contact)
                 <div class="fb">
@@ -84,7 +84,7 @@
 <!-- ===== CTA Start ===== -->
 <section class="i pg gh ji">
     <!-- Bg Shape -->
-    <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
+    <img class="h p q" src="{{asset('images/shape-16.svg')}}" alt="Bg Shape" />
 
     <div class="bb ye i z-10 ki xn dr">
         <div class="tc uf sn tn un gg">
@@ -112,8 +112,8 @@
             <div class="tc uf ap gg fp">
                 <div class="animate_top zd/2 to/4">
                     <a href="index.html">
-                        <img src="imgs/logo.png" alt="Logo" class="om w-12" />
-                        <img src="imgs/logo.png" alt="Logo" class="xc nm w-12" />
+                        <img src="{{asset('imgs/logo.png')}}" alt="Logo" class="om w-12" />
+                        <img src="{{asset('imgs/logo.png')}}" alt="Logo" class="xc nm w-12" />
                     </a>
 
                     <p class="lc fb">Le partenaire numérique des entrepreneurs.</p>

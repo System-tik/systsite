@@ -78,6 +78,15 @@
                     <p>
                         <?php echo $service->description ?>
                     </p>
+                    <div style="text-align: center; padding: 30px;">
+                        <a href="{{route('service', $service->id)}}" class="" style="
+                        color: #4e6bff;
+                        padding: 10px 50px 10px 50px;
+                        border-radius: 10px;
+                        border: 2px solid #4e6bff;
+                        ">Voir plus</a>
+                    </div>
+
                 </div>
                 @endforeach
             </div>
